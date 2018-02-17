@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menu_food"
+        android:id="@+id/menu_bebek"
         android:icon="@drawable/ic_adb_black_18dp"
-        android:title="Near Me"/>
+        android:title="Bebek"/>
 
     <item
-        android:id="@+id/menu_person"
+        android:id="@+id/menu_telur"
         android:icon="@drawable/ic_adb_black_18dp"
-        android:title="List"/>
+        android:title="Telur"/>
 
     <item
-        android:id="@+id/menu_profil"
+        android:id="@+id/menu_daging"
         android:icon="@drawable/ic_adb_black_18dp"
-        android:title="Profile"/>
+        android:title="Daging"/>
 
 </menu>
