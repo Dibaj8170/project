@@ -2,23 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menu_food"
+        android:id="@+id/menu_new_born"
         android:icon="@drawable/ic_adb_black_18dp"
-        android:title="Near Me"/>
+        android:title="New Born"/>
 
     <item
-        android:id="@+id/menu_person"
+        android:id="@+id/menu_petelur"
         android:icon="@drawable/ic_adb_black_18dp"
-        android:title="List"/>
+        android:title="Petelur"/>
 
     <item
-        android:id="@+id/menu_profil"
+        android:id="@+id/menu_pedaging"
         android:icon="@drawable/ic_adb_black_18dp"
-        android:title="Profile"/>
+        android:title="Pedaging"/>
 
     <item
-        android:id="@+id/menu_doang"
+        android:id="@+id/menu_lingkungan"
         android:icon="@drawable/ic_adb_black_18dp"
-        android:title="Doang"/>
+        android:title="Lingkungan"/>
 
 </menu>

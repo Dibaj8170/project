@@ -17,14 +17,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.TentangBebek" />
+        <activity android:name=".view.TentangBebek"
+            android:theme="@style/Baru"/>
 
-        <activity android:name=".view.Diagnosa" />
+        <activity android:name=".view.Diagnosa"
+            android:theme="@style/Baru"/>
 
         <activity android:name=".view.CaraBeternak"
             android:theme="@style/Baru"/>
 
-        <activity android:name=".view.Penyakit"></activity>
+        <activity android:name=".view.Penyakit"
+            android:theme="@style/Baru"/>
     </application>
 
 </manifest>
