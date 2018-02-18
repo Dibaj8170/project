@@ -32,27 +32,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnDiagnosa.setOnClickListener(this);
         btnCaraBertenak.setOnClickListener(this);
 
-        /*DatabaseHandler db = new DatabaseHandler(this);
+        DatabaseHandler db = new DatabaseHandler(this);
 
-        *//**
-         * CRUD Operations
-         * *//*
+        //*
+        // * CRUD Operations
         // Inserting Contacts
+
         Log.d("Insert: ", "Inserting ..");
-        db.addContact(new Gejala(51,"Ravi", "9100000000"));
-        db.addContact(new Gejala(52,"Srinivas", "9199999999"));
-        db.addContact(new Gejala(53,"Tommy", "9522222222"));
-        db.addContact(new Gejala(54,"Karthik", "9533333333"));
+        db.addContact(new Gejala(12,"Ravi", "9100000000", 0.5));
+        db.addContact(new Gejala(11,"Srinivas", "9199999999",0.1));
+        db.addContact(new Gejala(13,"Tommy", "9522222222",0.2));
+        db.addContact(new Gejala(14,"Karthik", "9533333333",0.4));
 
         // Reading all contacts
         Log.d("Reading: ", "Reading all contacts..");
         List<Gejala> contacts = db.getAllContacts();
 
         for (Gejala cn : contacts) {
-            String log = "Id: "+cn.getID()+" ,Name: " + cn.getName() + " ,Phone: " + cn.getPhoneNumber();
+            String log = "Id: "+cn.getID()+" ,Name: " + cn.getName() + " ,Phone: " + cn.getPhoneNumber()+" ,Angka: " + cn.getAngka() ;
             // Writing Contacts to log
             Log.d("Name: ", log);
-        }*/
+        }
     }
 
     @Override

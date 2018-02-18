@@ -41,8 +41,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_CONTACTS_TABLE = "CREATE TABLE " + TABLE_CONTACTS + "("
-                + KEY_ID + " INTEGER PRIMARY KEY," + KEY_ANGKA + " INT,"+ KEY_NAME + " TEXT,"
-                + KEY_PH_NO + " TEXT" + ")";
+                + KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT,"
+                + KEY_PH_NO + " TEXT," + KEY_ANGKA + " DOUBLE" + ")";
         db.execSQL(CREATE_CONTACTS_TABLE);
     }
 
@@ -65,10 +65,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(KEY_ANGKA, contact.getAngka()); // Contact Name
         values.put(KEY_NAME, contact.getName()); // Contact Name
         values.put(KEY_PH_NO, contact.getPhoneNumber()); // Contact Phone
-
+        values.put(KEY_ANGKA, contact.getAngka()); // Contact Name
         // Inserting Row
         db.insert(TABLE_CONTACTS, null, values);
         db.close(); // Closing database connection
@@ -78,14 +77,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     Gejala getContact(int id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
-        Cursor cursor = db.query(TABLE_CONTACTS, new String[] { KEY_ID, KEY_ANGKA,
-                        KEY_NAME, KEY_PH_NO }, KEY_ID + "=?",
+        Cursor cursor = db.query(TABLE_CONTACTS, new String[] { KEY_ID,
+                        KEY_NAME, KEY_PH_NO, KEY_ANGKA }, KEY_ID + "=?",
                 new String[] { String.valueOf(id) }, null, null, null, null);
         if (cursor != null)
             cursor.moveToFirst();
 
-        Gejala contact = new Gejala(Integer.parseInt(cursor.getString(0)),Integer.parseInt(cursor.getString(1)),
-                cursor.getString(2), cursor.getString(3));
+        Gejala contact = new Gejala(Integer.parseInt(cursor.getString(0)), cursor.getString(1), cursor.getString(2),
+                Double.parseDouble(cursor.getString(3)));
         // return contact
         return contact;
     }
@@ -104,9 +103,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             do {
                 Gejala contact = new Gejala();
                 contact.setID(Integer.parseInt(cursor.getString(0)));
-                contact.setAngka(Integer.parseInt(cursor.getString(1)));
-                contact.setName(cursor.getString(2));
-                contact.setPhoneNumber(cursor.getString(3));
+                contact.setName(cursor.getString(1));
+                contact.setPhoneNumber(cursor.getString(2));
+                contact.setAngka(Double.parseDouble(cursor.getString(3)));
                 // Adding contact to list
                 contactList.add(contact);
             } while (cursor.moveToNext());
@@ -121,10 +120,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(KEY_ANGKA, contact.getAngka());
         values.put(KEY_NAME, contact.getName());
         values.put(KEY_PH_NO, contact.getPhoneNumber());
-
+        values.put(KEY_ANGKA, contact.getAngka());
         // updating row
         return db.update(TABLE_CONTACTS, values, KEY_ID + " = ?",
                 new String[] { String.valueOf(contact.getID()) });

@@ -7,7 +7,7 @@ package com.example.dibby.bebek.pojo;
 public class Gejala {
     //private variables
     int _id;
-    int angka;
+    double angka;
     String _name;
     String _phone_number;
 
@@ -16,16 +16,18 @@ public class Gejala {
 
     }
     // constructor
-    public Gejala(int id,int angka, String name, String _phone_number){
+    public Gejala(int id, String name, String _phone_number, double angka){
         this._id = id;
         this._name = name;
         this._phone_number = _phone_number;
+        this.angka = angka;
     }
 
     // constructor
-    public Gejala(int angka,String name, String _phone_number){
+    public Gejala(String name, String _phone_number, double angka){
         this._name = name;
         this._phone_number = _phone_number;
+        this.angka = angka;
     }
     // getting ID
     public int getID(){
@@ -34,16 +36,6 @@ public class Gejala {
 
     // setting id
     public void setID(int id){
-        this._id = id;
-    }
-
-    // getting ID
-    public int getAngka(){
-        return this._id;
-    }
-
-    // setting id
-    public void setAngka(int id){
         this._id = id;
     }
 
@@ -65,5 +57,15 @@ public class Gejala {
     // setting phone number
     public void setPhoneNumber(String phone_number){
         this._phone_number = phone_number;
+    }
+
+    // getting ID
+    public Double getAngka(){
+        return this.angka;
+    }
+
+    // setting id
+    public void setAngka(double angka){
+        this.angka = angka;
     }
 }
