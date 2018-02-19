@@ -10,6 +10,7 @@ import android.view.View;
 import com.example.dibby.bebek.R;
 import com.example.dibby.bebek.db.DatabaseHandler;
 import com.example.dibby.bebek.pojo.Gejala;
+import com.example.dibby.bebek.pojo.Penyakit;
 
 import java.util.List;
 
@@ -38,18 +39,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // * CRUD Operations
         // Inserting Contacts
 
+        /*Log.d("Insert: ", "Inserting ..");
+        db.addContact(new Gejala("Ravi", "9100000000", 0.5));
+        db.addContact(new Gejala("Srinivas", "9199999999",0.1));
+        db.addContact(new Gejala("Tommy", "9522222222",0.2));
+        db.addContact(new Gejala("Karthik", "9533333333",0.4));
+
         Log.d("Insert: ", "Inserting ..");
-        db.addContact(new Gejala(12,"Ravi", "9100000000", 0.5));
-        db.addContact(new Gejala(11,"Srinivas", "9199999999",0.1));
-        db.addContact(new Gejala(13,"Tommy", "9522222222",0.2));
-        db.addContact(new Gejala(14,"Karthik", "9533333333",0.4));
+        db.addPenyakit(new Penyakit("dua", "Tiga", "empat", "lima"));
+        db.addPenyakit(new Penyakit("enam", "Tuju", "delapan", "sembilan"));*/
+
+
 
         // Reading all contacts
         Log.d("Reading: ", "Reading all contacts..");
         List<Gejala> contacts = db.getAllContacts();
 
         for (Gejala cn : contacts) {
-            String log = "Id: "+cn.getID()+" ,Name: " + cn.getName() + " ,Phone: " + cn.getPhoneNumber()+" ,Angka: " + cn.getAngka() ;
+            String log = "Id: "+cn.getID()+" ,Name: " + cn.getNama() + " ,Ket: " + cn.getKet()+" ,Angka: " + cn.getAngka() ;
+            // Writing Contacts to log
+            Log.d("Name: ", log);
+        }
+
+        Log.d("Reading: ", "Reading all contacts..");
+        List<Penyakit> penyakits = db.getAllPenyakit();
+
+        for (Penyakit cn : penyakits) {
+            String log = "Id: "+cn.getNo()+" ,Name: " + cn.getName() + " ,Penjelasan: " + cn.getJelas()+" ,Pencegahan: " + cn.getCegah() + " ,Pengobatan: " + cn.getSolusi();
             // Writing Contacts to log
             Log.d("Name: ", log);
         }
@@ -63,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.main_button_penyakit :
-                startActivity(new Intent(this, Penyakit.class));
+                startActivity(new Intent(this, PenyakitBebek.class));
                 break;
 
             case R.id.main_button_diagnosa :

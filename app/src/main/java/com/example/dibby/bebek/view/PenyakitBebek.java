@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.example.dibby.bebek.R;
 
-public class Penyakit extends AppCompatActivity {
+public class PenyakitBebek extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -6,57 +6,57 @@ package com.example.dibby.bebek.pojo;
 
 public class Gejala {
     //private variables
-    int _id;
+    String id;
     double angka;
-    String _name;
-    String _phone_number;
+    String nama;
+    String ket;
 
     // Empty constructor
     public Gejala(){
 
     }
     // constructor
-    public Gejala(int id, String name, String _phone_number, double angka){
-        this._id = id;
-        this._name = name;
-        this._phone_number = _phone_number;
+    public Gejala(String id, String nama, String ket, double angka){
+        this.id = id;
+        this.nama = nama;
+        this.ket = ket;
         this.angka = angka;
     }
 
     // constructor
-    public Gejala(String name, String _phone_number, double angka){
-        this._name = name;
-        this._phone_number = _phone_number;
+    public Gejala(String nama, String ket, double angka){
+        this.nama = nama;
+        this.ket = ket;
         this.angka = angka;
     }
     // getting ID
-    public int getID(){
-        return this._id;
+    public String getID(){
+        return this.id;
     }
 
     // setting id
-    public void setID(int id){
-        this._id = id;
+    public void setID(String id){
+        this.id = id;
     }
 
     // getting name
-    public String getName(){
-        return this._name;
+    public String getNama(){
+        return this.nama;
     }
 
     // setting name
-    public void setName(String name){
-        this._name = name;
+    public void setNama(String nama){
+        this.nama = nama;
     }
 
     // getting phone number
-    public String getPhoneNumber(){
-        return this._phone_number;
+    public String getKet(){
+        return this.ket;
     }
 
     // setting phone number
-    public void setPhoneNumber(String phone_number){
-        this._phone_number = phone_number;
+    public void setKet(String ket){
+        this.ket = ket;
     }
 
     // getting ID
