@@ -4,10 +4,28 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_gravity="center"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-        android:text="Hallo daging"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:text="@string/daging_par1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <ImageView
+        android:layout_margin="5dp"
+        android:src="@drawable/bebek_putih"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:text="@string/daging_par2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:text="@string/daging_par3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
 
 </LinearLayout>

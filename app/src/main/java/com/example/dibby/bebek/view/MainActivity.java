@@ -35,11 +35,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         DatabaseHandler db = new DatabaseHandler(this);
 
+        db.onDelete();
         //*
         // * CRUD Operations
         // Inserting Contacts
 
-        /*Log.d("Insert: ", "Inserting ..");
+        Log.d("Insert: ", "Inserting ..");
         db.addContact(new Gejala("Ravi", "9100000000", 0.5));
         db.addContact(new Gejala("Srinivas", "9199999999",0.1));
         db.addContact(new Gejala("Tommy", "9522222222",0.2));
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Log.d("Insert: ", "Inserting ..");
         db.addPenyakit(new Penyakit("dua", "Tiga", "empat", "lima"));
-        db.addPenyakit(new Penyakit("enam", "Tuju", "delapan", "sembilan"));*/
+        db.addPenyakit(new Penyakit("enam", "Tuju", "delapan", "sembilan"));
 
 
 

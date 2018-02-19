@@ -77,6 +77,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
      * All CRUD(Create, Read, Update, Delete) Operations
      */
 
+    public void onDelete(SQLiteDatabase db) {
+        db.execSQL("delete from "+ TABLE_CONTACTS);
+        db.execSQL("delete from "+ TABLE_PENYAKIT);
+    }
+
     // Adding new contact
     public void addContact(Gejala contact) {
         SQLiteDatabase db = this.getWritableDatabase();
