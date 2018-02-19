@@ -77,7 +77,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
      * All CRUD(Create, Read, Update, Delete) Operations
      */
 
-    public void onDelete(SQLiteDatabase db) {
+    public void onDelete() {
+        SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("delete from "+ TABLE_CONTACTS);
         db.execSQL("delete from "+ TABLE_PENYAKIT);
     }

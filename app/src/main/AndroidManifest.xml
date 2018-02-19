@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.MainActivity"
+        <activity
+            android:name=".view.MainActivity"
             android:theme="@style/Baru">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,16 +18,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.TentangBebek"
-            android:theme="@style/Baru"/>
-
-        <activity android:name=".view.Diagnosa"
-            android:theme="@style/Baru"/>
-
-        <activity android:name=".view.CaraBeternak"
-            android:theme="@style/Baru"/>
-
-        <activity android:name=".view.PenyakitBebek"
+        <activity
+            android:name=".view.TentangBebek"
+            android:theme="@style/Baru" />
+        <activity
+            android:name=".view.Diagnosa"
+            android:theme="@style/Baru" />
+        <activity
+            android:name=".view.CaraBeternak"
+            android:theme="@style/Baru" />
+        <activity
+            android:name=".view.PenyakitBebek"
+            android:theme="@style/Baru" />
+        <activity android:name=".view.DetailPenyakit"
             android:theme="@style/Baru"/>
     </application>
 
