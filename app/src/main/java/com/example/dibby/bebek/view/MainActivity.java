@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,6 +20,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     CardView btnBebek, btnPenyakit, btnDiagnosa, btnCaraBertenak;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnPenyakit = findViewById(R.id.main_button_penyakit);
         btnDiagnosa = findViewById(R.id.main_button_diagnosa);
         btnCaraBertenak = findViewById(R.id.main_button_cara_bertenak);
+
+        toolbar = findViewById(R.id.main_toolbar);
+        setSupportActionBar(toolbar);
 
         btnBebek.setOnClickListener(this);
         btnPenyakit.setOnClickListener(this);
