@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 
 import com.example.dibby.bebek.R;
 
@@ -29,6 +30,19 @@ public class FragmentDaging extends Fragment {
         View view = inflater.inflate(
                 R.layout.fragment_daging, container, false
         );
+        String text1 = getResources().getString(R.string.daging_par1);
+        String text2 = getResources().getString(R.string.daging_par2);
+        String text3 = getResources().getString(R.string.daging_par3);
+
+        WebView webView1 = view.findViewById(R.id.webview1);
+        webView1.loadData("<p style=\"text-align: justify\">" + text1 + "</p>", "text/html", "UTF-8");
+
+        WebView webView2 = view.findViewById(R.id.webview2);
+        webView2.loadData("<p style=\"text-align: justify\">" + text2 + "</p>", "text/html", "UTF-8");
+
+        WebView webView3 = view.findViewById(R.id.webview3);
+        webView3.loadData("<p style=\"text-align: justify\">" + text3 + "</p>", "text/html", "UTF-8");
+
 
         return view;
     }

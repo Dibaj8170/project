@@ -10,59 +10,61 @@
         android:orientation="vertical">
 
         <TextView
-            android:text="@string/bebek_par1"
+            android:layout_gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:text="Tentang Bebek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <WebView
+            android:id="@+id/webview1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+            android:layout_height="wrap_content">
+        </WebView>
 
         <ImageView
-            android:layout_margin="5dp"
+            android:layout_margin="10dp"
             android:src="@drawable/bebek"
             android:scaleType="centerCrop"
             android:layout_width="match_parent"
-            android:layout_height="200dp" />
+            android:layout_height="200dp"
+            />
 
-        <TextView
-            android:text="@string/bebek_par2"
+        <WebView
+            android:id="@+id/webview2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
-
-        <TextView
-            android:text="@string/bebek_par3"
+            android:layout_height="wrap_content">
+        </WebView>
+        <WebView
+            android:id="@+id/webview3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
-
-        <TextView
-            android:text="@string/bebek_par4"
+            android:layout_height="wrap_content">
+        </WebView>
+        <WebView
+            android:id="@+id/webview4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
-
-        <TextView
-            android:text="@string/bebek_par5"
+            android:layout_height="wrap_content">
+        </WebView>
+        <WebView
+            android:id="@+id/webview5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
-
-        <TextView
-            android:text="@string/bebek_par6"
+            android:layout_height="wrap_content">
+        </WebView>
+        <WebView
+            android:id="@+id/webview6"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
-
-        <TextView
-            android:text="@string/bebek_par7"
+            android:layout_height="wrap_content">
+        </WebView>
+        <WebView
+            android:id="@+id/webview7"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
-
-        <TextView
-            android:text="@string/bebek_par8"
+            android:layout_height="wrap_content">
+        </WebView>
+        <WebView
+            android:id="@+id/webview8"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+            android:layout_height="wrap_content">
+        </WebView>
 
     </LinearLayout>
 

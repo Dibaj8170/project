@@ -30,8 +30,11 @@
         <activity
             android:name=".view.PenyakitBebek"
             android:theme="@style/Baru" />
-        <activity android:name=".view.DetailPenyakit"
-            android:theme="@style/Baru"/>
+        <activity
+            android:name=".view.DetailPenyakit"
+            android:theme="@style/Baru" />
+        <activity android:name=".view.Help" />
+        <activity android:name=".view.About"></activity>
     </application>
 
 </manifest>

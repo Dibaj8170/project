@@ -7,7 +7,10 @@
         android:id="@+id/solusi"
         android:text="Hai"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        />
 
 
 </LinearLayout>

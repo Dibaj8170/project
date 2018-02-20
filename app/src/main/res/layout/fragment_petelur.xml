@@ -3,52 +3,46 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:text="@string/pete_par1"
+    <WebView
+        android:id="@+id/webview1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+        android:layout_height="wrap_content">
+    </WebView>
 
-    <TextView
-        android:text="@string/pete_par2"
+    <WebView
+        android:id="@+id/webview2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
-
-    <TextView
-        android:text="@string/pete_par3"
+        android:layout_height="wrap_content">
+    </WebView>
+    <WebView
+        android:id="@+id/webview3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
-
-    <TextView
-        android:text="@string/pete_par4"
+        android:layout_height="wrap_content">
+    </WebView>
+    <WebView
+        android:id="@+id/webview4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
-
-    <TextView
-        android:text="@string/pete_par5"
+        android:layout_height="wrap_content">
+    </WebView>
+    <WebView
+        android:id="@+id/webview5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
-
-    <TextView
-        android:text="@string/pete_par6"
+        android:layout_height="wrap_content">
+    </WebView>
+    <WebView
+        android:id="@+id/webview6"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
-
-    <TextView
-        android:text="@string/pete_par7"
+        android:layout_height="wrap_content">
+    </WebView>
+    <WebView
+        android:id="@+id/webview7"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
-
-    <TextView
-        android:text="@string/pete_par8"
+        android:layout_height="wrap_content">
+    </WebView>
+    <WebView
+        android:id="@+id/webview8"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+        android:layout_height="wrap_content">
+    </WebView>
 
 </LinearLayout>
