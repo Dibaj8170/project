@@ -22,19 +22,19 @@ import java.util.ArrayList;
 public class CustomAdapter extends ArrayAdapter<Penyakit> {
 
     private ArrayList<Penyakit> arrayList;
-//    Integer[] gambar;
+    Integer[] gambar;
     Context context;
 
     private static class ViewHolder{
         TextView tvName;
-//        ImageView ivPoto;
+        ImageView ivPoto;
     }
 
-    public CustomAdapter(ArrayList<Penyakit> data, Context context1/*, Integer[] gambar*/){
+    public CustomAdapter(ArrayList<Penyakit> data, Context context1, Integer[] gambar){
         super(context1, R.layout.list_penyakit, data);
         this.arrayList = data;
         this.context = context1;
-//        this.gambar = gambar;
+        this.gambar = gambar;
     }
 
     @NonNull
@@ -51,7 +51,7 @@ public class CustomAdapter extends ArrayAdapter<Penyakit> {
             LayoutInflater inflater = LayoutInflater.from(getContext());
             convertView = inflater.inflate(R.layout.list_penyakit, parent, false);
             viewHolder.tvName = convertView.findViewById(R.id.name);
-//            viewHolder.ivPoto = convertView.findViewById(R.id.detail_penyakit_gambar);
+            viewHolder.ivPoto = convertView.findViewById(R.id.image_bebek);
 
             view = convertView;
 
@@ -62,7 +62,7 @@ public class CustomAdapter extends ArrayAdapter<Penyakit> {
         }
 
         viewHolder.tvName.setText(penyakit.getName());
-//        viewHolder.ivPoto.setImageResource(gambar[position]);
+        viewHolder.ivPoto.setImageResource(gambar[position]);
 
         return convertView;
     }

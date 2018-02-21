@@ -17,7 +17,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/image"
+                    android:id="@+id/image_bebek"
                     android:layout_width="100dp"
                     android:scaleType="centerCrop"
                     android:layout_height="100dp"

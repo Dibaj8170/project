@@ -23,7 +23,9 @@ public class PenyakitBebek extends AppCompatActivity implements AdapterView.OnIt
 
     ArrayList<Penyakit> penyakits;
     ListView customList;
-/*    Integer[] gambar = {
+    Integer[] gambar = {
+            R.drawable.bebek,
+/*            R.drawable.bebek,
             R.drawable.bebek,
             R.drawable.bebek,
             R.drawable.bebek,
@@ -33,13 +35,7 @@ public class PenyakitBebek extends AppCompatActivity implements AdapterView.OnIt
             R.drawable.bebek,
             R.drawable.bebek,
             R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek
-*//*            R.drawable.bebek_fry,
-            R.drawable.bebek_jomblo,
-            R.drawable.bebek_putih,
-            R.drawable.bebek,
+            R.drawable.bebek*/
             R.drawable.bebek_fry,
             R.drawable.bebek_jomblo,
             R.drawable.bebek_putih,
@@ -50,8 +46,12 @@ public class PenyakitBebek extends AppCompatActivity implements AdapterView.OnIt
             R.drawable.bebek,
             R.drawable.bebek_fry,
             R.drawable.bebek_jomblo,
-            R.drawable.bebek_putih*//*
-    };*/
+            R.drawable.bebek_putih,
+            R.drawable.bebek,
+            R.drawable.bebek_fry,
+            R.drawable.bebek_jomblo,
+            R.drawable.bebek_putih
+    };
     public static CustomAdapter customAdapter;
 
     @Override
@@ -74,7 +74,7 @@ public class PenyakitBebek extends AppCompatActivity implements AdapterView.OnIt
                     cn.getCegah(), cn.getSolusi()));
         }
 
-        customAdapter = new CustomAdapter(penyakits, getApplicationContext()/*, gambar*/);
+        customAdapter = new CustomAdapter(penyakits, getApplicationContext(), gambar);
 
         customList.setAdapter(customAdapter);
         customList.setOnItemClickListener(this);
@@ -95,6 +95,7 @@ public class PenyakitBebek extends AppCompatActivity implements AdapterView.OnIt
         intent.putExtra("jelas", penyakit.getJelas());
         intent.putExtra("ular", penyakit.getCegah());
         intent.putExtra("olu", penyakit.getSolusi());
+        intent.putExtra("tes", i);
         startActivity(intent);
     }
 }
