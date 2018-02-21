@@ -39,6 +39,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </WebView>
+        <ImageView
+            android:layout_margin="5dp"
+            android:src="@drawable/telur_bulat"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
         <WebView
             android:id="@+id/webview4"
             android:layout_width="match_parent"

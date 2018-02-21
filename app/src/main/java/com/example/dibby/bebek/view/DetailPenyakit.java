@@ -33,9 +33,9 @@ public class DetailPenyakit extends AppCompatActivity {
 
         Log.i("cek", "dPenyakit = " + eek);
         // Add Fragments to adapter one by one
-        adapter.addFragment(new FragmentPenjelasan(), "FRAG1");
-        adapter.addFragment(new FragmentPenularan(), "FRAG2");
-        adapter.addFragment(new FragmentSolusi(), "FRAG3");
+        adapter.addFragment(new FragmentPenjelasan(), "Penjelasan");
+        adapter.addFragment(new FragmentPenularan(), "Pencegahan");
+        adapter.addFragment(new FragmentSolusi(), "Solusi");
         viewPager.setAdapter(adapter);
 
         TabLayout tabLayout = findViewById(R.id.detail_penyakit_tab);

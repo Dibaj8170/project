@@ -23,6 +23,35 @@ public class PenyakitBebek extends AppCompatActivity implements AdapterView.OnIt
 
     ArrayList<Penyakit> penyakits;
     ListView customList;
+/*    Integer[] gambar = {
+            R.drawable.bebek,
+            R.drawable.bebek,
+            R.drawable.bebek,
+            R.drawable.bebek,
+            R.drawable.bebek,
+            R.drawable.bebek,
+            R.drawable.bebek,
+            R.drawable.bebek,
+            R.drawable.bebek,
+            R.drawable.bebek,
+            R.drawable.bebek,
+            R.drawable.bebek
+*//*            R.drawable.bebek_fry,
+            R.drawable.bebek_jomblo,
+            R.drawable.bebek_putih,
+            R.drawable.bebek,
+            R.drawable.bebek_fry,
+            R.drawable.bebek_jomblo,
+            R.drawable.bebek_putih,
+            R.drawable.bebek,
+            R.drawable.bebek_fry,
+            R.drawable.bebek_jomblo,
+            R.drawable.bebek_putih,
+            R.drawable.bebek,
+            R.drawable.bebek_fry,
+            R.drawable.bebek_jomblo,
+            R.drawable.bebek_putih*//*
+    };*/
     public static CustomAdapter customAdapter;
 
     @Override
@@ -45,7 +74,7 @@ public class PenyakitBebek extends AppCompatActivity implements AdapterView.OnIt
                     cn.getCegah(), cn.getSolusi()));
         }
 
-        customAdapter = new CustomAdapter(penyakits, getApplicationContext());
+        customAdapter = new CustomAdapter(penyakits, getApplicationContext()/*, gambar*/);
 
         customList.setAdapter(customAdapter);
         customList.setOnItemClickListener(this);

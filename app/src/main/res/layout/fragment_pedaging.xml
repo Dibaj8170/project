@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <TextView
         android:layout_gravity="center"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-        android:text="Hallo pedaging"
+        android:text="Bebek Pedaging"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <WebView
+        android:id="@+id/webview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </WebView>
+    <ImageView
+        android:layout_margin="5dp"
+        android:src="@drawable/pedaging"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <WebView
+        android:id="@+id/webview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </WebView>
+    <WebView
+        android:id="@+id/webview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </WebView>
+    <WebView
+        android:id="@+id/webview4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </WebView>
+    <WebView
+        android:id="@+id/webview5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </WebView>
+
 
 </LinearLayout>
+</ScrollView>

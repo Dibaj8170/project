@@ -12,7 +12,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/bebek"
         android:layout_width="match_parent"
-        android:layout_height="350dp" />
+        android:layout_height="300dp" />
     
     <android.support.design.widget.TabLayout
         android:id="@+id/detail_penyakit_tab"
