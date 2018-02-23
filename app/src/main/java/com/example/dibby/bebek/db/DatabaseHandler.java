@@ -20,10 +20,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     // All Static variables
     // Database Version
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 4;
 
     // Database Name
-    private static final String DATABASE_NAME = "contactsManager";
+    private static final String DATABASE_NAME = "Diagnosa";
 
     // Contacts table name
     private static final String TABLE_CONTACTS = "contacts";
@@ -49,13 +49,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_CONTACTS_TABLE = "CREATE TABLE " + TABLE_CONTACTS + "("
-                + KEY_ID + " INTEGER PRIMARY KEY, "
+                + KEY_ID + " TEXT PRIMARY KEY, "
                 + KEY_NAMA + " TEXT, "
                 + KEY_KET + " TEXT, "
                 + KEY_ANGKA + " DOUBLE" + ")";
         db.execSQL(CREATE_CONTACTS_TABLE);
         String CREATE_PENYAKIT_TABLE = "CREATE TABLE " + TABLE_PENYAKIT + "("
-                + KEY_NO + " TEXT, "
+                + KEY_NO + " TEXT PRIMARY KEY, "
                 + KEY_NAME + " TEXT, "
                 + KEY_JELAS + " TEXT, "
                 + KEY_CEGAH + " TEXT, "
@@ -88,6 +88,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
+        values.put(KEY_ID, contact.getID());
         values.put(KEY_NAMA, contact.getNama()); // Contact Name
         values.put(KEY_KET, contact.getKet()); // Contact Phone
         values.put(KEY_ANGKA, contact.getAngka()); // Contact Name
@@ -97,7 +98,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
     // Getting single contact
-    Gejala getContact(String id) {
+    public Gejala getContact(String id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(TABLE_CONTACTS, new String[] { KEY_ID,
@@ -184,6 +185,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
+        values.put(KEY_NO, penyakit.getNo());
         values.put(KEY_NAME, penyakit.getName()); // Contact Name
         values.put(KEY_JELAS, penyakit.getJelas()); // Contact Phone
         values.put(KEY_CEGAH, penyakit.getCegah()); // Contact Name
@@ -194,7 +196,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
     // Getting single contact
-    Penyakit getPenyakit(String no) {
+    public Penyakit getPenyakit(String no) {
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(TABLE_PENYAKIT, new String[] { KEY_NO,

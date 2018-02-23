@@ -19,13 +19,15 @@
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Unggas terlihat mengantuk "
-                   android:orientation="vertical" />
+                   android:orientation="vertical"
+                   android:onClick="onCheckboxClicked"/>
 
                <CheckBox
                    android:id="@+id/g2"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:orientation="vertical"
+                   android:onClick="onCheckboxClicked"
                    android:text="Keluar lendir , kental berwarna kekuningan dan berbau dari hidung" />
 
                <CheckBox
@@ -33,18 +35,21 @@
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Muka dan mata bengkak "
+                   android:onClick="onCheckboxClicked"
                    android:orientation="vertical" />
 
                <CheckBox
                    android:id="@+id/g4"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
+                   android:onClick="onCheckboxClicked"
                    android:text="Terdapat kerak dihidung"
                    android:orientation="vertical" />
 
                <CheckBox
                    android:id="@+id/g5"
                    android:layout_width="wrap_content"
+                   android:onClick="onCheckboxClicked"
                    android:layout_height="wrap_content"
                    android:text="Napsu makan menurun hingga tembolok kosong saat diraba "
                    android:orientation="vertical" />
@@ -53,6 +58,7 @@
                    android:id="@+id/g6"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
+                   android:onClick="onCheckboxClicked"
                    android:text="Mengorok"
                    android:orientation="vertical" />
 
@@ -61,6 +67,7 @@
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:text="Pertumbuhan lambat"
+                   android:onClick="onCheckboxClicked"
                    android:orientation="vertical" />
 
                <CheckBox
@@ -69,6 +76,7 @@
                    android:layout_height="wrap_content"
                    android:text="Kotoran encer dan bercampur butiran-butiran putih seperti kapur1"
                    android:orientation="vertical" />
+
 
                <CheckBox
                    android:id="@+id/g9"

@@ -29,6 +29,10 @@ public class Gejala {
         this.ket = ket;
         this.angka = angka;
     }
+
+    public Gejala(double angka){
+        this.angka = angka;
+    }
     // getting ID
     public String getID(){
         return this.id;
