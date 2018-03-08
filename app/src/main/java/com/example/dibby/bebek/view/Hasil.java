@@ -89,4 +89,10 @@ public class Hasil extends AppCompatActivity implements View.OnClickListener {
         }
 
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(this, Diagnosa.class));
+    }
 }

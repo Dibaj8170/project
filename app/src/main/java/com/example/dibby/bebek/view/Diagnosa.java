@@ -820,4 +820,10 @@ public class Diagnosa extends AppCompatActivity implements View.OnClickListener 
         startActivity(i);
 
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(this, MainActivity.class));
+    }
 }
