@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         db.addContact(new Gejala("G35","Tubuh unggas menjadi kurus", "3",0.38));
         db.addContact(new Gejala("G36","Pertumbuhan yang lambat pada unggas muda", "3",0.51));
         db.addContact(new Gejala("G37","Telur menurun pada periode layer", "3",0.59));
+        db.addContact(new Gejala("G38","Berak berwarna hijau dan encer", "3",0.5));
 
 
         Log.d("Insert: ", "Inserting ..");

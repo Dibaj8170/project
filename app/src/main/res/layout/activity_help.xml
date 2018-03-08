@@ -1,6 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Diagnosa                                 "
+        android:layout_margin="8dp"
+        android:textSize="25dp"
+        android:background="#00CED1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Diagnosa berisi daftar gejala yang dapat dipilih berdasarkan beberapa kategori. Kategori nya diantara lain adalah gejala bagian kepala, bagian tubuh, berak dan bagian dubur, serta gejala berupa perilaku bebek. Setelah memilih maka dapat menekan tombol Analisa lalu sistem akan melakukan perhitungan yang lalu akan pergi ke halaman hasil untuk mencetak hasil perhitungan. Bila memilih tombol reset maka akan menresert pilihan gejala.
+"
+        />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Bebek                                     "
+            android:layout_margin="8dp"
+            android:textSize="25dp"
+            android:background="#00CED1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Bebek berisi informasi mengenai bebek, telur bebek, dan daging bebek yang dapat dibaca. Bacaan yang ada di menu ini berupa penjelasan umum mengenai bebek, telur bebek, dan daging bebek.
+"
+            />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Cara Beternak                                  "
+            android:layout_margin="8dp"
+            android:textSize="25dp"
+            android:background="#00CED1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Cara Beternak berisi informasi mengenai new born bebek, bebek petelur, bebek pedaging dan lingkungan bebek yang dapat dibaca. Bacaan yang ada di menu ini berupa penjelasan umum mengenai new born bebek, bebek petelur, bebek pedaging dan lingkungan bebek.
+"
+            />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Penyakit                                     "
+            android:layout_margin="8dp"
+            android:textSize="25dp"
+            android:background="#00CED1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Penyakit berisi daftar penyakit yang ada di aplikasi yang bila di klik akan masuk ke detail penyakit. Didetail penyakit terdapat penjelasan, pencegahan, dan solusi pengoatan untuk penyakit tersebut disertai gambar penyakit terkait.
+"
+            />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Help                                        "
+            android:layout_margin="8dp"
+            android:textSize="25dp"
+            android:background="#00CED1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Help berisi informasi dari setiap menu yang ada di aplikasi beserta penjelasan dari setiap menu tersebut.
+"
+            />
+
+        <TextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu About                                     "
+            android:layout_margin="8dp"
+            android:textSize="25dp"
+            android:background="#00CED1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu About berisi penjelasan mengenai pembuat dari aplikasi.
+"
+            />
+
 
 </LinearLayout>
+</ScrollView>

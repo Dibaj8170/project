@@ -1,289 +1,381 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-       <ScrollView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_weight="10">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
 
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-               <CheckBox
-                   android:id="@+id/g1"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Unggas terlihat mengantuk "
-                   android:orientation="vertical"
-                   android:onClick="onCheckboxClicked"/>
+            <TextView
+                android:layout_gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                  Bagian Kepala                   "
+                android:layout_margin="8dp"
+                android:textSize="25dp"
+                android:background="#00CED1"
+                />
+            <CheckBox
+                android:id="@+id/g2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Keluar lendir , kental berwarna kekuningan dan berbau dari hidung" />
 
-               <CheckBox
-                   android:id="@+id/g2"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:orientation="vertical"
-                   android:onClick="onCheckboxClicked"
-                   android:text="Keluar lendir , kental berwarna kekuningan dan berbau dari hidung" />
+            <CheckBox
+                android:id="@+id/g3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Muka dan mata bengkak " />
 
-               <CheckBox
-                   android:id="@+id/g3"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Muka dan mata bengkak "
-                   android:onClick="onCheckboxClicked"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:onClick="onCheckboxClicked"
+                android:orientation="vertical"
+                android:text="Terdapat kerak dihidung" />
 
-               <CheckBox
-                   android:id="@+id/g4"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:onClick="onCheckboxClicked"
-                   android:text="Terdapat kerak dihidung"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Mata menutup" />
 
-               <CheckBox
-                   android:id="@+id/g5"
-                   android:layout_width="wrap_content"
-                   android:onClick="onCheckboxClicked"
-                   android:layout_height="wrap_content"
-                   android:text="Napsu makan menurun hingga tembolok kosong saat diraba "
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Mata unggas terlihat lesu" />
 
-               <CheckBox
-                   android:id="@+id/g6"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:onClick="onCheckboxClicked"
-                   android:text="Mengorok"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Sayap dan pial bengkak serta kepala berwarna kebiruan" />
 
-               <CheckBox
-                   android:id="@+id/g7"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Pertumbuhan lambat"
-                   android:onClick="onCheckboxClicked"
-                   android:orientation="vertical" />
-
-               <CheckBox
-                   android:id="@+id/g8"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Kotoran encer dan bercampur butiran-butiran putih seperti kapur1"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Kornea menjadi keruh" />
 
 
-               <CheckBox
-                   android:id="@+id/g9"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Bulu dubur melekat satu sama lain"
-                   android:orientation="vertical" />
+            <TextView
+                android:layout_gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                  Bagian Tubuh                   "
+                android:layout_margin="8dp"
+                android:textSize="25dp"
+                android:background="#00CED1"
+                />
 
-               <CheckBox
-                   android:id="@+id/g10"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="sayap berwarna keabuan"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="sayap berwarna keabuan" />
 
-               <CheckBox
-                   android:id="@+id/g11"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Badan menjadi menunduk"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Badan menjadi menunduk" />
 
-               <CheckBox
-                   android:id="@+id/g12"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:orientation="vertical"
-                   android:text="Sayap terkulai" />
+            <CheckBox
+                android:id="@+id/g12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Sayap terkulai" />
 
-               <CheckBox
-                   android:id="@+id/g13"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Mata menutup"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Sayap berwarna biru" />
 
-               <CheckBox
-                   android:id="@+id/g14"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Sayap berwarna biru"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Persendian kaki dan sayap bengkak disertai kelumpuhan " />
 
-               <CheckBox
-                   android:id="@+id/g15"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Mata unggas terlihat lesu"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Bulu kasar" />
 
-               <CheckBox
-                   android:id="@+id/g16"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Sesak nafas"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Otot tubuh gemetar" />
 
-               <CheckBox
-                   android:id="@+id/g17"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Berak mengalami mencret"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Kelumpuhan hingga gangguan saraf yang dapat menyebabkan kejang-kejang dan leher terpuntir" />
 
-               <CheckBox
-                   android:id="@+id/g18"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Kotoran berwarna kuning, coklat atau hijau berlendir dan berbau busuk"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Bulu tampak kusam" />
 
-               <CheckBox
-                   android:id="@+id/g19"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Sayap dan pial bengkak serta kepala berwarna kebiruan"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Tubuh unggas menjadi kurus" />
 
-               <CheckBox
-                   android:id="@+id/g20"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Suka menggeleng-gelengkan kepala"
-                   android:orientation="vertical" />
+            <TextView
+                android:layout_gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                  Perilaku Bebek                   "
+                android:layout_margin="8dp"
+                android:textSize="25dp"
+                android:background="#00CED1"
+                />
 
-               <CheckBox
-                   android:id="@+id/g21"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Persendian kaki dan sayap bengkak disertai kelumpuhan "
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Unggas terlihat mengantuk " />
 
-               <CheckBox
-                   android:id="@+id/g22"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:orientation="vertical"
-                   android:text="Batuk-batuk" />
+            <CheckBox
+                android:id="@+id/g5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Napsu makan menurun hingga tembolok kosong saat diraba " />
 
-               <CheckBox
-                   android:id="@+id/g23"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Napas berbunyi"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Mengorok" />
 
-               <CheckBox
-                   android:id="@+id/g24"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Produksi telur turun"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Pertumbuhan lambat" />
 
-               <CheckBox
-                   android:id="@+id/g25"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Bulu kasar"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Sesak nafas" />
 
-               <CheckBox
-                   android:id="@+id/g26"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Unggas mengalami diare"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Suka menggeleng-gelengkan kepala" />
 
-               <CheckBox
-                   android:id="@+id/g27"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Kornea menjadi keruh"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Batuk-batuk" />
 
-               <CheckBox
-                   android:id="@+id/g28"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Otot tubuh gemetar"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Napas berbunyi" />
 
-               <CheckBox
-                   android:id="@+id/g29"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Kelumpuhan hingga gangguan saraf yang dapat menyebabkan kejang-kejang dan leher terpuntir"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Produksi telur turun" />
 
-               <CheckBox
-                   android:id="@+id/g30"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Bulu tampak kusam"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Jika tidur, paruhnya menempel di lantai dan keseimbangan tubuhnya terganggu." />
 
-               <CheckBox
-                   android:id="@+id/g31"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Peradangan di sekitar dubur dan kloaka,biasanya unggas akan mematoki duburnya sendiri"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Bersin" />
 
-               <CheckBox
-                   android:id="@+id/g32"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:orientation="vertical"
-                   android:text="Jika tidur, paruhnya menempel di lantai dan keseimbangan tubuhnya terganggu." />
+            <CheckBox
+                android:id="@+id/g34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Terengah-engah" />
 
-               <CheckBox
-                   android:id="@+id/g33"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Bersin"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Pertumbuhan yang lambat pada unggas muda" />
 
-               <CheckBox
-                   android:id="@+id/g34"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Terengah-engah"
-                   android:orientation="vertical" />
+            <CheckBox
+                android:id="@+id/g37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Telur menurun pada periode layer" />
 
-               <CheckBox
-                   android:id="@+id/g35"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Tubuh unggas menjadi kurus"
-                   android:orientation="vertical" />
 
-               <CheckBox
-                   android:id="@+id/g36"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Pertumbuhan yang lambat pada unggas muda"
-                   android:orientation="vertical" />
 
-               <CheckBox
-                   android:id="@+id/g37"
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Telur menurun pada periode layer"
-                   android:orientation="vertical" />
 
-           </LinearLayout>
+            <TextView
+                android:layout_gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="          Berak dan Bagian Dubur          "
+                android:layout_margin="8dp"
+                android:textSize="25dp"
+                android:background="#00CED1"
+                />
 
-       </ScrollView>
+            <CheckBox
+                android:id="@+id/g8"
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Kotoran encer dan bercampur butiran-butiran putih seperti kapur1" />
+
+
+            <CheckBox
+                android:id="@+id/g9"
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Bulu dubur melekat satu sama lain" />
+
+            <CheckBox
+                android:id="@+id/g17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Berak mengalami mencret" />
+
+            <CheckBox
+                android:id="@+id/g18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Kotoran berwarna kuning, coklat atau hijau berlendir dan berbau busuk" />
+
+            <CheckBox
+                android:id="@+id/g26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Unggas mengalami diare" />
+
+            <CheckBox
+                android:id="@+id/g31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Peradangan di sekitar dubur dan kloaka,biasanya unggas akan mematoki duburnya sendiri" />
+
+            <CheckBox
+                android:id="@+id/g38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:orientation="vertical"
+                android:text="Berak berwarna hijau dan encer" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -291,18 +383,18 @@
         android:orientation="horizontal">
 
         <Button
-            android:text="analisa"
             android:id="@+id/diagnosa_analisa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="analisa" />
 
         <Button
-            android:text="reset"
             android:id="@+id/diagnosa_reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="reset" />
 
     </LinearLayout>
 

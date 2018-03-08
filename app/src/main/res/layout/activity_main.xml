@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -37,7 +38,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/main_button_bebek"
-                android:layout_width="120dp"
+                android:layout_width="140dp"
                 android:layout_height="120dp"
                 android:layout_marginBottom="40dp">
 
@@ -52,14 +53,8 @@
                         android:layout_weight="1"
                         android:padding="2dp"
                         android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher" />
+                        android:src="@drawable/bebekmenu" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Bebek"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
                 </LinearLayout>
 
@@ -67,7 +62,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/main_button_penyakit"
-                android:layout_width="120dp"
+                android:layout_width="140dp"
                 android:layout_height="120dp">
 
                 <LinearLayout
@@ -81,14 +76,7 @@
                         android:layout_weight="1"
                         android:padding="2dp"
                         android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Penyakit"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+                        android:src="@drawable/penyakit" />
 
                 </LinearLayout>
 
@@ -104,7 +92,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/main_button_diagnosa"
-                android:layout_width="120dp"
+                android:layout_width="140dp"
                 android:layout_height="120dp"
                 android:layout_marginBottom="40dp">
 
@@ -119,14 +107,7 @@
                         android:layout_weight="1"
                         android:padding="2dp"
                         android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Diagnosa"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+                        android:src="@drawable/diagnosa" />
 
                 </LinearLayout>
 
@@ -134,7 +115,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/main_button_cara_bertenak"
-                android:layout_width="120dp"
+                android:layout_width="140dp"
                 android:layout_height="120dp">
 
                 <LinearLayout
@@ -148,14 +129,7 @@
                         android:layout_weight="1"
                         android:padding="2dp"
                         android:scaleType="centerCrop"
-                        android:src="@mipmap/ic_launcher" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Cara Bertenak"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+                        android:src="@drawable/cara" />
 
                 </LinearLayout>
 

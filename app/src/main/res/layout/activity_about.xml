@@ -6,9 +6,18 @@
     <TextView
         android:layout_gravity="center"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-        android:text="Aplikasi ini dengan judul"
+        android:text="SISTEM PAKAR BEBEK"
+        android:textSize="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
     <TextView
         android:layout_gravity="center"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
@@ -16,9 +25,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <TextView
-        android:layout_gravity="center"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-        android:text="Dibuat Oleh"
+        android:text="
+        2017 Dibaj Tyatastuti Putri"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

@@ -24,33 +24,18 @@ public class PenyakitBebek extends AppCompatActivity implements AdapterView.OnIt
     ArrayList<Penyakit> penyakits;
     ListView customList;
     Integer[] gambar = {
-            R.drawable.bebek,
-/*            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek*/
-            R.drawable.bebek_fry,
-            R.drawable.bebek_jomblo,
-            R.drawable.bebek_putih,
-            R.drawable.bebek,
-            R.drawable.bebek_fry,
-            R.drawable.bebek_jomblo,
-            R.drawable.bebek_putih,
-            R.drawable.bebek,
-            R.drawable.bebek_fry,
-            R.drawable.bebek_jomblo,
-            R.drawable.bebek_putih,
-            R.drawable.bebek,
-            R.drawable.bebek_fry,
-            R.drawable.bebek_jomblo,
-            R.drawable.bebek_putih
+            R.drawable.snot,
+            R.drawable.kapur,
+            R.drawable.hijau2,
+            R.drawable.kolera,
+            R.drawable.cr,
+            R.drawable.colibaci,
+            R.drawable.nd,
+            R.drawable.gumuro,
+            R.drawable.ib,
+            R.drawable.avian,
+            R.drawable.marek,
+            R.drawable.darah,
     };
     public static CustomAdapter customAdapter;
 
@@ -67,9 +52,6 @@ public class PenyakitBebek extends AppCompatActivity implements AdapterView.OnIt
         List<Penyakit> hubla = db.getAllPenyakit();
 
         for (Penyakit cn : hubla) {
-            /*String log = "Id: "+cn.getNo()+" ,Name: " + cn.getName() + " ,Penjelasan: " + cn.getJelas()+" ,Pencegahan: " + cn.getCegah() + " ,Pengobatan: " + cn.getSolusi();
-            // Writing Contacts to log
-            Log.d("Name: ", log);*/
             penyakits.add(new Penyakit(cn.getNo(), cn.getName(), cn.getJelas(),
                     cn.getCegah(), cn.getSolusi()));
         }

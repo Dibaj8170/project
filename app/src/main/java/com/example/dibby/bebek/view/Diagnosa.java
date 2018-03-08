@@ -21,10 +21,9 @@ public class Diagnosa extends AppCompatActivity implements View.OnClickListener 
     Button btnAnalisa, btnReset;
     CheckBox cb1, cb2, cb3, cb4, cb5, cb6, cb7, cb8, cb9, cb10, cb11, cb12,
             cb13, cb14, cb15, cb16, cb17, cb18, cb19, cb20, cb21, cb22, cb23, cb24,
-            cb25, cb26, cb27, cb28, cb29, cb30, cb31, cb32, cb33, cb34, cb35, cb36, cb37;
-    Double[] hasil = new Double[12];
-    Double[] bobot = new Double[37];
-    String[] idGejala = new String[37];
+            cb25, cb26, cb27, cb28, cb29, cb30, cb31, cb32, cb33, cb34, cb35, cb36, cb37, cb38;
+    Double[] bobot = new Double[38];
+    String[] idGejala = new String[38];
     ArrayList<Gejala> mGejala = new ArrayList<>();
     int i = 0;
 
@@ -43,11 +42,11 @@ public class Diagnosa extends AppCompatActivity implements View.OnClickListener 
 
     String[] P01 = {"G01","G02","G03","G04","G05","G06","G07"};
     String[] P02 = {"G05","G08","G09","G10","G11","G12","G13"};
-    String[] P03 = {"G05","G09","G14","G15","G29"};
+    String[] P03 = {"G05","G09","G14","G15","G33"};
     String[] P04 = {"G05","G16","G17","G18","G19","G20","G21"};
     String[] P05 = {"G02","G05","G20","G22","G23","G24"};
     String[] P06 = {"G05","G09","G16","G22","G25","G26"};
-    String[] P07 = {"G05","G14","G15","G22","G23","G24","G33"};
+    String[] P07 = {"G05","G14","G15","G22","G23","G24","G38"};
     String[] P08 = {"G05","G15","G30","G31","G32"};
     String[] P09 = {"G05","G07","G22","G33","G34"};
     String[] P10 = {"G05","G07","G18"};
@@ -100,6 +99,7 @@ public class Diagnosa extends AppCompatActivity implements View.OnClickListener 
         cb35 = findViewById(R.id.g35);
         cb36 = findViewById(R.id.g36);
         cb37 = findViewById(R.id.g37);
+        cb38 = findViewById(R.id.g38);
 
         btnReset.setOnClickListener(this);
         btnAnalisa.setOnClickListener(this);
@@ -594,21 +594,6 @@ public class Diagnosa extends AppCompatActivity implements View.OnClickListener 
         Double tmpP10 = 0.0;
         Double tmpP11 = 0.0;
         Double tmpP12 = 0.0;
-//        if(bobotP01.length>1){
-//            int k = 0;
-//            for(int n = 0; n < P01.length; n++){
-//                if(bobotP01[n]!=null && k == 0) {
-//                    a = bobotP01[n];
-//                    k++;
-//                } else if(bobotP01[n]!=null && k == 1){
-//                    tmpP = (bobotP01[n] * a) / (1 - ((1-bobotP01[n])*(1-a)));
-//                    k++;
-//                } else if(bobotP01[n]!=null){
-//                    tmpP = (bobotP01[n] * tmpP) / (1 - ((1-bobotP01[n])*(1-tmpP)));
-//                }
-//            }
-//            Log.e("hasil1 = ", String.valueOf(tmpP));
-//        }
 
         if(bobotP01.length>1){
             
@@ -819,21 +804,19 @@ public class Diagnosa extends AppCompatActivity implements View.OnClickListener 
             
         }
 
-        Bundle b = new Bundle();
-        b.putDouble("hasil1", tmpP1);
-        b.putDouble("hasil2", tmpP2);
-        b.putDouble("hasil3", tmpP3);
-        b.putDouble("hasil4", tmpP4);
-        b.putDouble("hasil5", tmpP5);
-        b.putDouble("hasil6", tmpP6);
-        b.putDouble("hasil7", tmpP7);
-        b.putDouble("hasil8", tmpP8);
-        b.putDouble("hasil9", tmpP9);
-        b.putDouble("hasil10", tmpP10);
-        b.putDouble("hasil11", tmpP11);
-        b.putDouble("hasil12", tmpP12);
         Intent i=new Intent(this, Hasil.class);
-        i.putExtras(b);
+        i.putExtra("hasil1", tmpP1);
+        i.putExtra("hasil2", tmpP2);
+        i.putExtra("hasil3", tmpP3);
+        i.putExtra("hasil4", tmpP4);
+        i.putExtra("hasil5", tmpP5);
+        i.putExtra("hasil6", tmpP6);
+        i.putExtra("hasil7", tmpP7);
+        i.putExtra("hasil8", tmpP8);
+        i.putExtra("hasil9", tmpP9);
+        i.putExtra("hasil10", tmpP10);
+        i.putExtra("hasil11", tmpP11);
+        i.putExtra("hasil12", tmpP12);
         startActivity(i);
 
     }

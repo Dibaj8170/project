@@ -23,13 +23,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 4;
 
     // Database Name
-    private static final String DATABASE_NAME = "Diagnosa";
+    private static final String DATABASE_NAME = "diagnosa";
 
     // Contacts table name
     private static final String TABLE_CONTACTS = "contacts";
     private static final String TABLE_PENYAKIT = "penyakit";
 
-    // Contacts Table Columns names
+    // Table Columns names
     private static final String KEY_ID = "id";
     private static final String KEY_ANGKA = "angka";
     private static final String KEY_NAMA = "nama";

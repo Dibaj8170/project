@@ -1,6 +1,5 @@
 package com.example.dibby.bebek.view;
 
-import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -22,33 +21,18 @@ public class DetailPenyakit extends AppCompatActivity {
     ImageView ivDetail;
 
     Integer[] gambar = {
-            R.drawable.bebek,
-/*            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek,
-            R.drawable.bebek*/
-            R.drawable.bebek_fry,
-            R.drawable.bebek_jomblo,
-            R.drawable.bebek_putih,
-            R.drawable.bebek,
-            R.drawable.bebek_fry,
-            R.drawable.bebek_jomblo,
-            R.drawable.bebek_putih,
-            R.drawable.bebek,
-            R.drawable.bebek_fry,
-            R.drawable.bebek_jomblo,
-            R.drawable.bebek_putih,
-            R.drawable.bebek,
-            R.drawable.bebek_fry,
-            R.drawable.bebek_jomblo,
-            R.drawable.bebek_putih
+            R.drawable.snot,
+            R.drawable.kapur,
+            R.drawable.hijau2,
+            R.drawable.kolera,
+            R.drawable.cr,
+            R.drawable.colibaci,
+            R.drawable.nd,
+            R.drawable.gumuro,
+            R.drawable.ib,
+            R.drawable.avian,
+            R.drawable.marek,
+            R.drawable.darah,
     };
 
     @Override
