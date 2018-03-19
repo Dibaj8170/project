@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="12dp">
+
     <TextView
         android:layout_gravity="center"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
@@ -23,11 +25,12 @@
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
         android:text="Aplikasi Sistem Pakar Untuk Mendiagnosa Penyakit Pada bebek Dengan Metode Dempster Shafer"
         android:layout_width="wrap_content"
+        android:paddingBottom="200dp"
         android:layout_height="wrap_content" />
     <TextView
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-        android:text="
-        2017 Dibaj Tyatastuti Putri"
+        android:layout_gravity="center"
+        android:text="2018 Dibaj Tyatastuti Putri"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

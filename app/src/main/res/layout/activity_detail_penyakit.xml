@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.dibby.bebek.view.DetailPenyakit">
+    tools:context="com.ddd.dibby.bebek.com.dibby.bebek.view.DetailPenyakit">
 
     <ImageView
         android:id="@+id/detail_penyakit_gambar"

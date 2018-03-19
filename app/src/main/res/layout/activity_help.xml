@@ -9,15 +9,20 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <TextView
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Menu Diagnosa                                 "
-        android:layout_margin="8dp"
-        android:textSize="25dp"
-        android:background="#00CED1"
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:background="#00CED1">
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu Diagnosa"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,15 +30,19 @@
 "
         />
 
-        <TextView
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Menu Bebek                                     "
+            android:orientation="vertical"
             android:layout_margin="8dp"
-            android:textSize="25dp"
-            android:background="#00CED1"
-            />
+            android:background="#00CED1">
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu Bebek"
+                android:textSize="25dp"/>
+        </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,15 +50,19 @@
 "
             />
 
-        <TextView
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Menu Cara Beternak                                  "
+            android:orientation="vertical"
             android:layout_margin="8dp"
-            android:textSize="25dp"
-            android:background="#00CED1"
-            />
+            android:background="#00CED1">
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu Cara Beternak"
+                android:textSize="25dp"/>
+        </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -57,15 +70,19 @@
 "
             />
 
-        <TextView
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Menu Penyakit                                     "
+            android:orientation="vertical"
             android:layout_margin="8dp"
-            android:textSize="25dp"
-            android:background="#00CED1"
-            />
+            android:background="#00CED1">
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu Penyakit"
+                android:textSize="25dp"/>
+        </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,15 +90,19 @@
 "
             />
 
-        <TextView
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Menu Help                                        "
+            android:orientation="vertical"
             android:layout_margin="8dp"
-            android:textSize="25dp"
-            android:background="#00CED1"
-            />
+            android:background="#00CED1">
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu Help"
+                android:textSize="25dp"/>
+        </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -89,15 +110,19 @@
 "
             />
 
-        <TextView
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Menu About                                     "
+            android:orientation="vertical"
             android:layout_margin="8dp"
-            android:textSize="25dp"
-            android:background="#00CED1"
-            />
+            android:background="#00CED1">
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu About"
+                android:textSize="25dp"/>
+        </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

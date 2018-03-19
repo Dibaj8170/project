@@ -14,16 +14,22 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:background="#00CED1">
             <TextView
                 android:layout_gravity="center"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="                  Bagian Kepala                   "
-                android:layout_margin="8dp"
-                android:textSize="25dp"
-                android:background="#00CED1"
-                />
+                android:text="Bagian Kepala"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
+
             <CheckBox
                 android:id="@+id/g2"
                 android:layout_width="wrap_content"
@@ -84,16 +90,20 @@
                 android:text="Kornea menjadi keruh" />
 
 
-            <TextView
-                android:layout_gravity="center"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="                  Bagian Tubuh                   "
+                android:orientation="vertical"
                 android:layout_margin="8dp"
-                android:textSize="25dp"
-                android:background="#00CED1"
-                />
+                android:background="#00CED1">
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bagian Tubuh"
+                    android:textSize="25dp"/>
+            </LinearLayout>
 
             <CheckBox
                 android:id="@+id/g10"
@@ -175,16 +185,20 @@
                 android:orientation="vertical"
                 android:text="Tubuh unggas menjadi kurus" />
 
-            <TextView
-                android:layout_gravity="center"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="                  Perilaku Bebek                   "
+                android:orientation="vertical"
                 android:layout_margin="8dp"
-                android:textSize="25dp"
-                android:background="#00CED1"
-                />
+                android:background="#00CED1">
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perilaku Bebek"
+                    android:textSize="25dp"/>
+            </LinearLayout>
 
             <CheckBox
                 android:id="@+id/g1"
@@ -303,18 +317,20 @@
                 android:text="Telur menurun pada periode layer" />
 
 
-
-
-            <TextView
-                android:layout_gravity="center"
-                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="          Berak dan Bagian Dubur          "
+                android:orientation="vertical"
                 android:layout_margin="8dp"
-                android:textSize="25dp"
-                android:background="#00CED1"
-                />
+                android:background="#00CED1">
+                <TextView
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berak dan Bagian Dubur"
+                    android:textSize="25dp"/>
+            </LinearLayout>
 
             <CheckBox
                 android:id="@+id/g8"
