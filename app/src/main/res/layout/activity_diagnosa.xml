@@ -34,7 +34,6 @@
                 android:id="@+id/g2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onCheckboxClicked"
                 android:textSize="15dp"
                 android:orientation="vertical"
                 android:text="Keluar lendir , kental berwarna kekuningan dan berbau dari hidung" />
@@ -43,7 +42,6 @@
                 android:id="@+id/g3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onCheckboxClicked"
                 android:textSize="15dp"
                 android:orientation="vertical"
                 android:text="Muka dan mata bengkak " />
@@ -53,7 +51,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15dp"
-                android:onClick="onCheckboxClicked"
                 android:orientation="vertical"
                 android:text="Terdapat kerak dihidung" />
 
@@ -204,7 +201,6 @@
                 android:id="@+id/g1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onCheckboxClicked"
                 android:textSize="15dp"
                 android:orientation="vertical"
                 android:text="Unggas terlihat mengantuk " />
@@ -213,7 +209,6 @@
                 android:id="@+id/g5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onCheckboxClicked"
                 android:textSize="15dp"
                 android:orientation="vertical"
                 android:text="Napsu makan menurun hingga tembolok kosong saat diraba " />
@@ -222,7 +217,6 @@
                 android:id="@+id/g6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onCheckboxClicked"
                 android:textSize="15dp"
                 android:orientation="vertical"
                 android:text="Mengorok" />
@@ -231,7 +225,6 @@
                 android:id="@+id/g7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onCheckboxClicked"
                 android:textSize="15dp"
                 android:orientation="vertical"
                 android:text="Pertumbuhan lambat" />

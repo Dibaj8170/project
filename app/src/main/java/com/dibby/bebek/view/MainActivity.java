@@ -221,6 +221,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         mViewPager.setCurrentItem(1);
                     } else if(mViewPager.getCurrentItem() == 1){
                         mViewPager.setCurrentItem(2);
+                    } else if(mViewPager.getCurrentItem() == 2){
+                        mViewPager.setCurrentItem(3);
+                    } else if(mViewPager.getCurrentItem() == 3){
+                        mViewPager.setCurrentItem(4);
                     } else {
                         mViewPager.setCurrentItem(0);
                     }

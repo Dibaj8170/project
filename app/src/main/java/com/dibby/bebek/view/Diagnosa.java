@@ -160,7 +160,7 @@ public class Diagnosa extends AppCompatActivity implements View.OnClickListener 
         cb35.setChecked(false);
         cb36.setChecked(false);
         cb37.setChecked(false);
-        
+        cb38.setChecked(false);
     }
 
     public void checkBox(){
